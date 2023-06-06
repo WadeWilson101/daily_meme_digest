@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/itemHome"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Home"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemMyCreation"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_mood_24"
+        android:title="My Creation"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemLeaderboard"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_leaderboard_24"
+        android:title="Leaderboard"
+        android:visible="true"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/itemSettings"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="Settings"
+        android:visible="true"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="292dp"
+        android:text="Daily Meme Digest"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText_Login_username"
+        android:layout_width="364dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="64dp"
+        android:ems="10"
+        android:hint="Enter username"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/material_on_background_disabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editText_Login_password"
+        android:layout_width="364dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Enter password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/material_on_background_disabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Username"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/editText_Login_username"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.067"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Password"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.069"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Login_username" />
+
+    <Button
+        android:id="@+id/button_Login_CreateAccount"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Create Account"
+        android:textColor="#035BF4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Login_password" />
+
+    <Button
+        android:id="@+id/button_Login_SignIn"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#035BF4"
+        android:text="Sign In"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_Login_CreateAccount" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottie"
+        android:layout_width="217dp"
+        android:layout_height="210dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.048"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/nyan_cat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

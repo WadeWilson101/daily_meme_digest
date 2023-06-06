@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="450dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="379dp"
+        android:layout_height="324dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.243">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageHome"
+                android:layout_width="387dp"
+                android:layout_height="255dp"
+                android:cropToPadding="false"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/txtTop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="@font/comic_neue_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/imageHome" />
+
+            <TextView
+                android:id="@+id/txtBot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/comic_neue_bold"
+                android:text="TextView"
+                android:textColor="@color/white"
+                android:textSize="34sp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageHome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/btnComments"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="46dp"
+                android:layout_height="38dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="8dp"
+                app:icon="@drawable/ic_baseline_chat_bubble_24"
+                app:iconTint="#237AF6"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/btnLikes"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="46dp"
+                android:layout_height="38dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="8dp"
+                app:icon="@drawable/ic_baseline_favorite_24"
+                app:iconTint="#FF3838"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/txtLikes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="0 LIKES"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/btnLikes"
+                app:layout_constraintTop_toBottomOf="@+id/imageHome"
+                app:layout_constraintVertical_bias="0.81" />
+
+            <TextView
+                android:id="@+id/txtMyComments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="9dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="0 COMMENTS"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/btnComments"
+                app:layout_constraintHorizontal_bias="0.808"
+                app:layout_constraintStart_toEndOf="@+id/txtLikes"
+                app:layout_constraintTop_toBottomOf="@+id/imageHome"
+                app:layout_constraintVertical_bias="0.807" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

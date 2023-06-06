@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Create_MyCreation">
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Preview"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgCreateMeme"
+        android:layout_width="369dp"
+        android:layout_height="210dp"
+        android:layout_marginTop="124dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/txtBotCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="122dp"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgCreateMeme"
+        app:layout_constraintEnd_toEndOf="@+id/imgCreateMeme"
+        app:layout_constraintStart_toStartOf="@+id/imgCreateMeme" />
+
+    <TextView
+        android:id="@+id/txtTopCreate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/comic_neue_bold"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="@+id/imgCreateMeme"
+        app:layout_constraintStart_toStartOf="@+id/imgCreateMeme"
+        app:layout_constraintTop_toTopOf="@+id/imgCreateMeme" />
+
+    <EditText
+        android:id="@+id/editText_Create_imgURL"
+        android:layout_width="364dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:hint="Enter Image URL"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/material_on_background_disabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="Image URL"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_Create_imgURL"
+        app:layout_constraintTop_toBottomOf="@+id/imgCreateMeme" />
+
+    <EditText
+        android:id="@+id/editText_Create_topTxt"
+        android:layout_width="364dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="88dp"
+        android:ems="10"
+        android:hint="Enter Top Text"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/material_on_background_disabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:text="Top Text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_Create_imgURL"
+        app:layout_constraintTop_toBottomOf="@+id/imgCreateMeme" />
+
+    <EditText
+        android:id="@+id/editText_Create_botTxt"
+        android:layout_width="364dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="Enter Bottom Text"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:textColor="@color/material_on_background_disabled"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="208dp"
+        android:text="Bottom Text"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/editText_Create_imgURL"
+        app:layout_constraintTop_toBottomOf="@+id/imgCreateMeme" />
+
+    <Button
+        android:id="@+id/button_Create_CreateMeme"
+        android:layout_width="364dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#035BF4"
+        android:text="Create Meme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText_Create_botTxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>
